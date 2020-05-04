@@ -1,4 +1,19 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!DOCTYPE html>
+<html>
+   <body>
+      <h1 class="form-control" style="text-align:center">Assignment 4</h1>
+      <div>
+         <button type="button" class="btn btn-primary" (click)="toggleList(); isDisabled()" 
+         [disabled] = "disableflagForAddButton">Click to Add Items to List</button>
+         <br><br>
+         <button type="button" class="btn btn-primary" (click)="toggleList(); isDisabled()" 
+         [disabled] = "disableflagForRemoveButton">Click to Remove Items from List</button>
+         <br><br>
+         <ul [@listAnimation]="items.length" class="items">
+         <li *ngFor="let item of items" class="container" style="list-style-type:none">
+            <p class="container"> The item added is Item {{ item }}</p>
+         </li>
+         </ul>
+      </div>
+   </body>
+</html>

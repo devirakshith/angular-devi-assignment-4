@@ -1,3 +1,18 @@
-p {
-  font-family: Lato;
+h1{
+	background-color: blue;
+	color: white;
+}
+
+div{
+	align-items: center;
+	justify-content: center;
+	text-align:center;
+}
+
+p{
+	background-color: darkorange;
+	color: darkblue;
+	text-align:center;
+	align-items: center;
+	justify-content: center;
 }
